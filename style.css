@@ -122,5 +122,9 @@ h1{
 }
 button{
     padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin: 50px;
+    text-decoration: none;
+    color: #123456;
 }
