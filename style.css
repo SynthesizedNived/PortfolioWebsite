@@ -120,3 +120,7 @@ h1{
     font-size: 60px;
     font-family: monospace;
 }
+button{
+    padding: 10px;
+    margin: 50px;
+}
