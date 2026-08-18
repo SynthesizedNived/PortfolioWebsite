@@ -1,9 +1,111 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    color: green;
-    background-color: black;
-    font-family: monospace;
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* Navigation */
+
+.navbar {
+    background-color: #123456;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 50px;
+}
+
+
+/* Logo */
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #1e5c91;
+    border-radius: 5px;
+}
+
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+}
+
+
+/* Dropdown menu */
+
+.dropdown-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    background-color: white;
+
+    min-width: 160px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+}
+
+
+/* Dropdown links */
+
+.dropdown-menu a {
+    display: block;
+
+    color: #222;
+
+    padding: 12px 15px;
+
+    white-space: nowrap;
+}
+
+
+/* Hover over Academics */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Dropdown hover */
+
+.dropdown-menu a:hover {
+    background-color: #eeeeee;
 }
