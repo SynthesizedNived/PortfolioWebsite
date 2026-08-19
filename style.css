@@ -114,11 +114,13 @@ h1{
     font-family: monospace;
     font-style: bold;
     margin: 5px;
+    text-align: center;
 }
 .text{
     color: #123456;
     font-size: 60px;
     font-family: monospace;
+    text-align: center;
 }
 button{
     padding: 10px;
