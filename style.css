@@ -111,22 +111,39 @@ body {
 }
 h1{
     color: #123456;
-    font-family: monospace;
-    font-style: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
     margin: 5px;
     text-align: center;
+    font-size: 30px;
 }
 .text{
     color: #123456;
     font-size: 60px;
-    font-family: monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 300;
+}
+.mybutton{
     text-align: center;
 }
-button{
-    padding: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin: 50px;
+.mybutton button{
+    padding: 20px;
+    border-radius: 10px;
+    border-color: white;
+    box-shadow: none;
+
+}
+.mybutton button a{
     text-decoration: none;
     color: #123456;
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
+}
+.mybutton button:hover{
+color: white;
+background-color: #123456;
+transition: 0.3s;
+}
+.mybutton button a:hover{
+    color: white;
 }
