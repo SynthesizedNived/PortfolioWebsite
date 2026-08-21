@@ -1,150 +1,251 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-* {
-    margin: 0;
-    padding: 0;
+*{
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
-
-
-/* Body */
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #222;
+body{
+    font-family: monospace;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    font-size: 20px;
+    background-color: black;
+    color: green;
+    border-style: dashed;
+    border-color: green;
+}
+.nav-logo {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+nav a{
+    text-decoration: none;
+    color: green;
+}
+.dropdown{
+    position: relative;
+    color: black;
+    gap: 30px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 25px;
+    gap: 10px;
+    margin-top: 12px;
+    width: 220px;
+    border: 3px dashed green;
+}
+.dropdown-menu a{
+    margin-bottom: 10px;
+    display: block;
 }
 
-
-/* Navigation */
-
-.navbar {
-    background-color: #123456;
-
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.contact {
+    overflow-wrap: break-word;
+}
+.gbtn{
+    background-color: black;
+    color: green;
+    border-color: green;
+    border-style: dashed;
+    padding: 10px;
+    margin-top: -5px;
+    font-family: monospace;
+}
+.gbtn:hover{
+    background-color: green;
+    color: black;
+    font-family: monospace;
+}
+.hero {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
 
-    padding: 15px 50px;
+    min-height: 80vh;
+    padding: 60px 10%;
+}
+.hw{
+    font-size: 30px;
+    color: green;
+}
+.intro {
+    width: 50%;
+}
+.hero h1{
+    font-size: 60px;
+    color: green;
+    font-family: monospace;
 }
 
-
-/* Logo */
-
-.logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-
-/* Navigation links */
-
-.nav-links {
+.hero-art {
+    width: 50%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    color: green;
+}
+.border{
+    font-size: 20px;
+    margin: 10px;
+    color: green;
+}
+.aboutme{
+font-size: 20px;
+color: green;
+}
+.about-me{
+color: green;
+padding: 40px;
+width: 100%;
+}
+.followme{
+    color: green;
+    border: dashed;
+    border-color: green;
+    background-color: black;
+    margin-top: 15px;
+    padding: 20px;
+}
+.followme:hover{
+    color: black;
+    background-color: green;
+    font-family: monospace;
+    cursor: pointer;
+}
+.aboute{
+    font-size: 60px;
+    margin: 0;
+    background-color: green;
+    color: black;
+}
+.about{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+    display: block;
+}
+.education{
+    color: green;
+    padding: 40px;
+    width: 100%;
+}
+.educ{
+    font-size: 60px;
+    color: black;
+    background-color: green;
+}
+.edu{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+    display: block;
+}
+.skills{
+     color: green;
+    padding: 40px;
+    width: 100%;
+}
+.skill-info{
+    color: black;
+    background-color: green;
+    font-size: 60px;
+    margin: 0;
+}
+.skill{
+    border: dashed;
+    padding: 25px;
+    width: 70%;
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.gallery{
+    color: green;
+    padding: 40px;
+    width: 100%;
+}
+.gallery-title{
+    color: black;
+    font-size: 60px;
+    background-color: green;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
+.gallery-items img{
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+     display: block;
+     margin-top: 20px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    border: dashed;
+    border-color: green;
     padding: 10px;
 }
-
-.nav-links a:hover {
-    background-color: #1e5c91;
-    border-radius: 5px;
+.title:hover{
+    background-color: green;
+    color: black;
+    cursor: pointer;
 }
-
-
-/* Dropdown */
-
-.dropdown {
-    position: relative;
-}
-
-
-/* Dropdown menu */
-
-.dropdown-menu {
-    display: none;
-
-    position: absolute;
-
-    top: 100%;
-    left: 0;
-
-    background-color: white;
-
-    min-width: 160px;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-    z-index: 1000;
-}
-
-
-/* Dropdown links */
-
-.dropdown-menu a {
-    display: block;
-
-    color: #222;
-
-    padding: 12px 15px;
-
-    white-space: nowrap;
-}
-
-
-/* Hover over Academics */
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-
-/* Dropdown hover */
-
-.dropdown-menu a:hover {
-    background-color: #eeeeee;
-}
-h1{
-    color: #123456;
-    font-family: "black ops one", system-ui;
-    font-weight: bold;
-    margin: 5px;
-    text-align: center;
-    font-size: 30px;
-}
-.text{
-    color: #123456;
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    font-weight: 300;
-}
-.mybutton{
-    text-align: center;
-}
-.mybutton button{
-    padding: 20px;
-    border-radius: 10px;
-    border-color: white;
-    box-shadow: none;
-
-}
-.mybutton button a{
+.mp{
     text-decoration: none;
-    color: #123456;
-    font-family: Georgia, 'Times New Roman', Times, serif   ;
+    color: green;
 }
-.mybutton button:hover{
-color: white;
-background-color: #123456;
-transition: 0.3s;
+.contact-us{
+    padding: 40px;
+    width: 100%;
 }
-.mybutton button a:hover{
-    color: white;
+.contact-us-on{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    background-color: green;
+}
+.hmu{
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+.socials{
+    text-align: center;
+    line-height: 1.8;
+    text-decoration: none;
+    color: black;
+    background-color: green;
+}
+.sm{
+    text-decoration: none;
+    color: green;
+}
+footer {
+    border-top: 2px dashed green;
+    padding: 30px;
+    text-align: center;
+    color: green;
+    font-family: monospace;
+    font-size: 20px;
+    font-style: bolder;
+    line-height: 40px;
 }
