@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth ;
+}
+body{
+    font-family: monospace;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    font-size: 20px;
+    background-color: black;
+    color: green;
+    border-style: dashed;
+    border-color: green;
+}
+.nav-logo {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+nav a{
+    text-decoration: none;
+    color: green;
+}
+.dropdown{
+    position: relative;
+    color: black;
+    gap: 30px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 25px;
+    gap: 10px;
+    margin-top: 12px;
+    width: 220px;
+    border: 3px dashed green;
+    opacity: 1;
+    z-index: 1000;
+}
+.dropdown-menu a{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.contact {
+    overflow-wrap: break-word;
+}
+.gbtn{
+    background-color: black;
+    color: green;
+    border-color: green;
+    border-style: dashed;
+    padding: 10px;
+    margin-top: -5px;
+    font-family: monospace;
+}
+.gbtn:hover{
+    background-color: green;
+    color: black;
+    font-family: monospace;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    padding: 60px 10%;
+}
+.logo{
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.texts h1{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    background-color: green;
+    margin-top: 20px;
+}
+.texts p{
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+footer {
+    border-top: 2px dashed green;
+    padding: 30px;
+    text-align: center;
+    color: green;
+    font-family: monospace;
+    font-size: 20px;
+    font-style: bolder;
+    line-height: 40px;
+}
